@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminpanel.AdminPanel"
+    android:background="@drawable/button_background">
+
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3DDBCD"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:layout_weight="1"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/cornersbg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Admin Panel"
+                    android:textFontWeight="800"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/montserrat_alternates_extrabold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Application Users"
+                    android:textFontWeight="800"
+                    android:textSize="25sp"
+                    android:paddingLeft="10dp"/>
+                <TextView
+                    android:id="@+id/usrCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textFontWeight="800"
+                    android:textSize="25sp"
+                    android:gravity="right"
+                    android:paddingRight="30dp"
+                    android:textColor="#052BFB"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Purchased Products"
+                    android:textFontWeight="800"
+                    android:textSize="25sp"
+                    android:paddingLeft="10dp"/>
+                <TextView
+                    android:id="@+id/prodCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textFontWeight="800"
+                    android:textSize="25sp"
+                    android:gravity="right"
+                    android:paddingRight="30dp"
+                    android:textColor="#052BFB"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Package Registered"
+                    android:textFontWeight="800"
+                    android:textSize="25sp"
+                    android:paddingLeft="10dp"/>
+                <TextView
+                    android:id="@+id/regCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textFontWeight="800"
+                    android:textSize="25sp"
+                    android:gravity="right"
+                    android:paddingRight="30dp"
+                    android:textColor="#052BFB"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            >
+            <LinearLayout
+                android:paddingBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TableRow>
+                        <ImageView
+                            android:id="@+id/addProducts"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/additem"
+                            android:background="#C5BABA"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/deleteProducts"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/deleteicon"
+                            android:background="#C5BABA"
+                            />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="Add Products"
+                            android:textSize="20sp"
+                            android:background="#C5BABA"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:textSize="20sp"
+                            android:text="Delete Products"
+                            android:background="#C5BABA"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="20dp">
+
+                        <ImageView
+                            android:id="@+id/addPackages"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="2"
+                            android:background="#C5BABA"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/additem"
+                            android:layout_marginRight="10dp"/>
+
+                        <ImageView
+                            android:id="@+id/deletePackages"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/deleteicon"
+                            android:background="#C5BABA"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:textSize="20sp"
+                            android:text="Add Packages"
+                            android:background="#C5BABA"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:textSize="20sp"
+                            android:text="Delete Packages"
+                            android:background="#C5BABA"
+                            android:layout_marginRight="10dp"
+                            />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_marginTop="20dp">
+
+                        <ImageView
+                            android:id="@+id/todayOrders"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/allitems"
+                            android:background="#C5BABA"
+                            android:layout_marginRight="10dp"/>
+                        <ImageView
+                            android:id="@+id/allOrders"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/allitems"
+                            android:background="#C5BABA"
+                            android:layout_marginRight="10dp"
+                            />
+                    </TableRow>
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:textSize="19sp"
+                            android:text="Cash Delivery Orders"
+                            android:background="#C5BABA"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:textSize="20sp"
+                            android:text="All Orders"
+                            android:background="#C5BABA"
+                            android:layout_marginRight="10dp"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="20dp">
+
+                        <ImageView
+                            android:id="@+id/allUsers"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/usericon"
+                            android:background="#C5BABA"/>
+
+                        <ImageView
+                            android:id="@+id/registeredUsers"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/usericon"
+                            android:background="#C5BABA"/>
+                    </TableRow>
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:textSize="20sp"
+                            android:text="All Users"
+                            android:background="#C5BABA"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:textSize="20sp"
+                            android:text="Registered Users"
+                            android:background="#C5BABA"/>
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

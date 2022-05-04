@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "649364574565",
+    "firebase_url": "https://a-square-gym-default-rtdb.firebaseio.com",
+    "project_id": "a-square-gym",
+    "storage_bucket": "a-square-gym.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649364574565:android:0cce6a804689d83c31118c",
+        "android_client_info": {
+          "package_name": "com.rohit.asquare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649364574565-plen5cu3ltv34a5b6kagrhcge0g03ont.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rohit.asquare",
+            "certificate_hash": "4f662b21ac3cf52c39597b4f1651c7c93260623d"
+          }
+        },
+        {
+          "client_id": "649364574565-r2v6t98qn3ddg99vq4lnj6fanon7u8b0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rohit.asquare",
+            "certificate_hash": "1e0b11ee6c9ded4d0e53501598ce710910b671ec"
+          }
+        },
+        {
+          "client_id": "649364574565-e060rqcchddpmf9im6cfekptis8jmt6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYMW5RZZaLWgICklligSoOWyIA6l6MiZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649364574565-e060rqcchddpmf9im6cfekptis8jmt6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649364574565:android:5968a0d960bc83a931118c",
+        "android_client_info": {
+          "package_name": "com.rohit.cse225ca1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649364574565-magq2t2a5kcnn39vh7b1mb22f2cqq5es.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rohit.cse225ca1",
+            "certificate_hash": "1e0b11ee6c9ded4d0e53501598ce710910b671ec"
+          }
+        },
+        {
+          "client_id": "649364574565-mq2dibms19l89g2rtmhq18brcdmfs3kd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rohit.cse225ca1",
+            "certificate_hash": "4f662b21ac3cf52c39597b4f1651c7c93260623d"
+          }
+        },
+        {
+          "client_id": "649364574565-e060rqcchddpmf9im6cfekptis8jmt6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYMW5RZZaLWgICklligSoOWyIA6l6MiZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649364574565-e060rqcchddpmf9im6cfekptis8jmt6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

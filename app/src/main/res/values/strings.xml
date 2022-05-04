@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Makeup Touch</string>
+    <string name="str1">India Today News breaks the most important stories in and from India and abroad in six sections - India News, Business News, Cinema News, Sports News, World News and Lifestyle News. India News keeps tab of every development in all parts of India</string>
+    <string name="deathonnile">Disclaimer: Photos displayed on this page is submitted by users and believed to be from the public domain. The copyright of these pictures belongs to their original publisher/photographer as the case may be. If some of the photos are not appropriate for you or if you think your copyright has been violated, please write to popcorn@oneindia.co.in. We will immediately remove those photos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="strike">  <strike> crossed </strike> </string>
+</resources>
